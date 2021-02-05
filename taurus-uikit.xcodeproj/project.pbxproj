@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,16 @@
 		91F956F825CDBDF400769A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F956F625CDBDF400769A5D /* LaunchScreen.storyboard */; };
 		91F9570325CDBDF400769A5D /* taurus_uikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9570225CDBDF400769A5D /* taurus_uikitTests.swift */; };
 		91F9570E25CDBDF400769A5D /* taurus_uikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9570D25CDBDF400769A5D /* taurus_uikitUITests.swift */; };
+		91F9571F25CDBF6F00769A5D /* GeminiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9571E25CDBF6F00769A5D /* GeminiParser.swift */; };
+		91F9572425CDBF7500769A5D /* GeminiCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9572325CDBF7500769A5D /* GeminiCompiler.swift */; };
+		91F9572925CDC3AB00769A5D /* GeminiResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9572825CDC3AB00769A5D /* GeminiResponseParser.swift */; };
+		91F9572E25CDC3C500769A5D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9572D25CDC3C500769A5D /* Page.swift */; };
+		91F9573425CDC5E400769A5D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F9573325CDC5E400769A5D /* WebKit.framework */; };
+		91F9573925CDC60F00769A5D /* GeminiToHTMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9573825CDC60F00769A5D /* GeminiToHTMLConverter.swift */; };
+		91F9573E25CDC94600769A5D /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F9573D25CDC94600769A5D /* Network.framework */; };
+		91F9575525CDCB6200769A5D /* GeminiToHTMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9573825CDC60F00769A5D /* GeminiToHTMLConverter.swift */; };
+		91F9575B25CDCC2600769A5D /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 91F9575A25CDCC2600769A5D /* SwiftRichString */; };
+		91F9576125CDCD2200769A5D /* Html in Frameworks */ = {isa = PBXBuildFile; productRef = 91F9576025CDCD2200769A5D /* Html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,15 @@
 		91F9570925CDBDF400769A5D /* taurus-uikitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "taurus-uikitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F9570D25CDBDF400769A5D /* taurus_uikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taurus_uikitUITests.swift; sourceTree = "<group>"; };
 		91F9570F25CDBDF400769A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F9571E25CDBF6F00769A5D /* GeminiParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiParser.swift; sourceTree = "<group>"; };
+		91F9572325CDBF7500769A5D /* GeminiCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiCompiler.swift; sourceTree = "<group>"; };
+		91F9572825CDC3AB00769A5D /* GeminiResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeminiResponseParser.swift; sourceTree = "<group>"; };
+		91F9572D25CDC3C500769A5D /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		91F9573325CDC5E400769A5D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		91F9573825CDC60F00769A5D /* GeminiToHTMLConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiToHTMLConverter.swift; sourceTree = "<group>"; };
+		91F9573D25CDC94600769A5D /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		91F9574225CDC98500769A5D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		91F9574A25CDC9F700769A5D /* libquic.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libquic.tbd; path = usr/lib/libquic.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F9575B25CDCC2600769A5D /* SwiftRichString in Frameworks */,
+				91F9576125CDCD2200769A5D /* Html in Frameworks */,
+				91F9573425CDC5E400769A5D /* WebKit.framework in Frameworks */,
+				91F9573E25CDC94600769A5D /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 				91F9570125CDBDF400769A5D /* taurus-uikitTests */,
 				91F9570C25CDBDF400769A5D /* taurus-uikitUITests */,
 				91F956E625CDBDF200769A5D /* Products */,
+				91F9573225CDC5E400769A5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +125,19 @@
 		91F956E725CDBDF200769A5D /* taurus-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				91F9571E25CDBF6F00769A5D /* GeminiParser.swift */,
+				91F9572325CDBF7500769A5D /* GeminiCompiler.swift */,
+				91F9572825CDC3AB00769A5D /* GeminiResponseParser.swift */,
 				91F956E825CDBDF200769A5D /* AppDelegate.swift */,
 				91F956EA25CDBDF200769A5D /* SceneDelegate.swift */,
 				91F956EC25CDBDF200769A5D /* ViewController.swift */,
 				91F956EE25CDBDF200769A5D /* Main.storyboard */,
 				91F956F425CDBDF400769A5D /* Assets.xcassets */,
+				91F9572D25CDC3C500769A5D /* Page.swift */,
 				91F956F625CDBDF400769A5D /* LaunchScreen.storyboard */,
 				91F956F925CDBDF400769A5D /* Info.plist */,
 				91F956F125CDBDF200769A5D /* taurus_uikit.xcdatamodeld */,
+				91F9573825CDC60F00769A5D /* GeminiToHTMLConverter.swift */,
 			);
 			path = "taurus-uikit";
 			sourceTree = "<group>";
@@ -131,6 +160,17 @@
 			path = "taurus-uikitUITests";
 			sourceTree = "<group>";
 		};
+		91F9573225CDC5E400769A5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F9574A25CDC9F700769A5D /* libquic.tbd */,
+				91F9574225CDC98500769A5D /* CFNetwork.framework */,
+				91F9573D25CDC94600769A5D /* Network.framework */,
+				91F9573325CDC5E400769A5D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +187,10 @@
 			dependencies = (
 			);
 			name = "taurus-uikit";
+			packageProductDependencies = (
+				91F9575A25CDCC2600769A5D /* SwiftRichString */,
+				91F9576025CDCD2200769A5D /* Html */,
+			);
 			productName = "taurus-uikit";
 			productReference = 91F956E525CDBDF200769A5D /* taurus-uikit.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +262,10 @@
 				Base,
 			);
 			mainGroup = 91F956DC25CDBDF200769A5D;
+			packageReferences = (
+				91F9575925CDCC2600769A5D /* XCRemoteSwiftPackageReference "SwiftRichString" */,
+				91F9575F25CDCD2200769A5D /* XCRemoteSwiftPackageReference "swift-html" */,
+			);
 			productRefGroup = 91F956E625CDBDF200769A5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,9 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F956ED25CDBDF200769A5D /* ViewController.swift in Sources */,
+				91F9572925CDC3AB00769A5D /* GeminiResponseParser.swift in Sources */,
+				91F9572E25CDC3C500769A5D /* Page.swift in Sources */,
+				91F9572425CDBF7500769A5D /* GeminiCompiler.swift in Sources */,
 				91F956E925CDBDF200769A5D /* AppDelegate.swift in Sources */,
 				91F956F325CDBDF200769A5D /* taurus_uikit.xcdatamodeld in Sources */,
 				91F956EB25CDBDF200769A5D /* SceneDelegate.swift in Sources */,
+				91F9571F25CDBF6F00769A5D /* GeminiParser.swift in Sources */,
+				91F9573925CDC60F00769A5D /* GeminiToHTMLConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F9570325CDBDF400769A5D /* taurus_uikitTests.swift in Sources */,
+				91F9575525CDCB6200769A5D /* GeminiToHTMLConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +645,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91F9575925CDCC2600769A5D /* XCRemoteSwiftPackageReference "SwiftRichString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftRichString.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.2;
+			};
+		};
+		91F9575F25CDCD2200769A5D /* XCRemoteSwiftPackageReference "swift-html" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-html";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91F9575A25CDCC2600769A5D /* SwiftRichString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F9575925CDCC2600769A5D /* XCRemoteSwiftPackageReference "SwiftRichString" */;
+			productName = SwiftRichString;
+		};
+		91F9576025CDCD2200769A5D /* Html */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F9575F25CDCD2200769A5D /* XCRemoteSwiftPackageReference "swift-html" */;
+			productName = Html;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		91F956F125CDBDF200769A5D /* taurus_uikit.xcdatamodeld */ = {
